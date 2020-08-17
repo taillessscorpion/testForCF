@@ -1,0 +1,43 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+}
+h2 {
+    padding-left: 20px;
+}
+#new-book-form-container {
+    height: 300px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#books-list {
+    flex-grow: 1;
+    width: 100vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.max-size{
+    height: 100%;
+    width: 100%;
+}
+.error {
+    color: red;
+}
+.book-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../B/index.css">
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-firestore.js"></script>
+</head>
+<body>
+    <div id="new-book-form-container">
+        <form id="add-form" class="max-size" spellcheck="false">
+            <div class="input-wrapper">
+                <input type="text" name="book" placeholder="Book's name">
+                <div class="error" id="error-book"></div>
+            </div>
+            <div class="input-wrapper">
+                <input type="text" name="author" placeholder="Book's author">
+                <div class="error" id="error-author"></div>
+            </div>
+            <div class="submit-wrapper">
+                <button class="btn" type="submit">Add</button>
+            </div>
+        </form>
+    </div>
+    <div id="books-list">
+        <div id="read-list" class="max-size">
+            <h2>These books are read</h2>
+        </div>
+        <div id="unread-list" class="max-size">
+            <h2>These books are not read yet</h2>
+        </div>
+    </div>
+    <script src="../B/index.js"></script>
+</body>
+</html>
